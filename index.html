@@ -6,10 +6,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Подключение стилей слайдера -->
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+	
+	
+	<!-- Подключение иконок -->
+	<link rel="stylesheet" href="css/web-icons_style.css">
+	<!-- Подключение svg-иконок -->
+	<link rel="stylesheet" href="css/svg-icons_style.css">
+	
 	<link rel="stylesheet" href="css/style.css">
 
 	<title>wp-theme</title>
@@ -21,31 +27,31 @@
 		<!-- header -->
 
 		<header class="header">
-			<div class="header__top top-header">
-				<div class="top-header__inner">
-					<div class="top-header__item top-header__item_warning"><i class="material-icons">warning</i> You are
+			<div class="header__top top_header">
+				<div class="top_header__inner">
+					<div class="top_header__item top_header__item_warning icon-warning">You are
 						not protected</div>
-					<div class="top-header__item top-header__item_data">
+					<div class="top_header__item top_header__item_data">
 						<div class="data__item">Your IP Address: 107.3.176.194</div>
 						<div class="data__item">Your ISP: Comcast Cable</div>
 					</div>
-					<a href="#" class="top-header__item top-header__item_link">Learn More <i
+					<a href="#" class="top_header__item top_header__item_link">Learn More <i
 							class='fas fa-chevron-right'></i></a>
 				</div>
-				<div class="top-header__close">&times;</div>
+				<div class="top_header__close btnClose">&times;</div>
 			</div>
-			<div class="header__bottom bottom-header">
-				<div class="bottom-header__inner">
-					<div class="bottom-header__burger burger-menu">
+			<div class="header__bottom bottom_header">
+				<div class="bottom_header__inner">
+					<div class="bottom_header__burger burger_menu">
 						<span></span>
 						<span></span>
 						<span></span>
 					</div>
-					<div class="bottom-header__logo">Company Name</div>
-					<nav class="bottom-header__menu menu-header">
-						<ul class="menu-header__list">
+					<h1 class="bottom_header__logo">Company Name</h1>
+					<nav class="bottom_header__menu menu_header">
+						<ul class="menu_header__list">
 							<li>
-								<div class="menu-header__item">WHY US</div>
+								<div class="menu_header__item">WHY US</div>
 								<!-- <ul class="menu-header__sublist">
 										<li><a href="#" class="menu-header__link">one</a></li>
 										<li><a href="#" class="menu-header__link">two</a></li>
@@ -53,9 +59,9 @@
 										<li><a href="#" class="menu-header__link">four</a></li>
 									</ul> -->
 							</li>
-							<li><a href="#" class="menu-header__item menu-header__item_link">VPN APPS</a></li>
+							<li><a href="#" class="menu_header__item menu_header__item_link">VPN APPS</a></li>
 							<li>
-								<div class="menu-header__item">SUPPORT</div>
+								<div class="menu_header__item">SUPPORT</div>
 								<!-- <ul class="menu-header__sublist">
 										<li><a href="#" class="menu-header__link">one</a></li>
 										<li><a href="#" class="menu-header__link">two</a></li>
@@ -64,7 +70,7 @@
 									</ul> -->
 							</li>
 							<li>
-								<div class="menu-header__item">Resources</div>
+								<div class="menu_header__item">Resources</div>
 								<!-- <ul class="menu-header__sublist">
 										<li><a href="#" class="menu-header__link">one</a></li>
 										<li><a href="#" class="menu-header__link">two</a></li>
@@ -74,9 +80,9 @@
 							</li>
 						</ul>
 					</nav>
-					<div class="bottom-header__btns">
-						<button type="button" class="bottom-header__btn bottom-header__btn_login">LOG IN</button>
-						<button type="button" class="bottom-header__btn bottom-header__btn_start">GET STARTED</button>
+					<div class="bottom_header__btns">
+						<button type="button" class="bottom_header__btn bottom_header__btn_login button">LOG IN</button>
+						<button type="button" class="bottom_header__btn bottom_header__btn_start">GET STARTED</button>
 					</div>
 				</div>
 			</div>
@@ -88,30 +94,31 @@
 
 			<!-- article-page -->
 
-			<div class="page__article article-page">
+			<div class="page__article article_page">
 				<div class="container">
-					<div class="article-page__item item-article">
-						<div class="item-article__image">
-							<picture>
-								<source srcset="image/page/article/Bitmap.avif" type="image/avif">
-								<source srcset="image/page/article/Bitmap.webp" type="image/webp">
-								<img src="image/page/article/Bitmap.jpg" alt="">
-							</picture>
-						</div>
-						<div class="item-article__content">
-							<a href="#" class="item-article__text">TV Addons: Legal battle against Canadian
-								media giants demonstrates severe consequences facing developers accused of copyright
-								infringement</a>
-							<div class="item-article__name">Danica Sergison</div>
-							<div class="item-article__date"> | JUL 08, 2018</div>
-							<div class="item-article__tags">
-								<a href="#">Copyright</a>,
-								<a href="#">News</a>,
-								<a href="#">Open Source</a>,
-								<a href="#">Privacy</a>
+					<div class="article_page__item item_article itemArticle">
+						<picture class="item_article__picture">
+							<source srcset="image/page/article/Bitmap.avif" type="image/avif">
+							<source srcset="image/page/article/Bitmap.webp" type="image/webp">
+							<img class="item_article__image" src="image/page/article/Bitmap.jpg" alt="">
+						</picture>
+						<div class="item_article__content">
+							<div class="item_article__title">
+								<a href="#" class="item_article__link">TV Addons: Legal battle against Canadian
+									media giants demonstrates severe consequences facing developers accused of copyright
+									infringement</a>
 							</div>
-							<div class="item-article__comment"><i class='far fa-comment-alt'></i>0
+							<div class="item_article__data">
+								<div class="item_article__name">Danica Sergison</div>
+								<div class="item_article__date"> | JUL 08, 2018</div>
 							</div>
+							<ul class="item_article__tags tags_item">
+								<li><a href="#" class="tags_item__link">Copyright</a>,</li>
+								<li><a href="#" class="tags_item__link">News</a>,</li>
+								<li><a href="#" class="tags_item__link">Open Source</a>,</li>
+								<li><a href="#" class="tags_item__link">Privacy</a></li>
+							</ul>
+							<div class="item_article__comment fa-regular fa-message">0</div>
 						</div>
 					</div>
 				</div>
@@ -121,24 +128,26 @@
 
 			<!-- tags-page -->
 
-			<div class="page__tags tags-page">
+			<div class="page__tags tags_page">
 				<div class="container">
-					<div class="tags-page__inner">
-						<div class="tags-page__items">
-							<div class="tags-page__title">TAGS:</div>
-							<ul class="tags-page__list">
-								<li><a href="#" class="tags-page__link tags-page__link_green">bitcoin</a></li>
-								<li><a href="#" class="tags-page__link tags-page__link_green">bittorrent</a></li>
-								<li><a href="#" class="tags-page__link tags-page__link_green">irc</a></li>
-								<li><a href="#" class="tags-page__link tags-page__link_green">news</a></li>
-								<li><a href="#" class="tags-page__link tags-page__link_green">privacy</a></li>
-								<li><a href="#" class="tags-page__link tags-page__link_green">programming</a></li>
-								<li><a href="#" class="tags-page__link tags-page__link_green">security</a></li>
+					<nav class="tags_page__inner">
+						<div class="tags_page__items">
+							<div class="tags_page__title">TAGS:</div>
+							<ul class="tags_page__list">
+								<li><a href="#" class="tags_page__link tags_page__link_green">bitcoin</a></li>
+								<li><a href="#" class="tags_page__link tags_page__link_green">bittorrent</a></li>
+								<li><a href="#" class="tags_page__link tags_page__link_green">irc</a></li>
+								<li><a href="#" class="tags_page__link tags_page__link_green">news</a></li>
+								<li><a href="#" class="tags_page__link tags_page__link_green">privacy</a></li>
+								<li><a href="#" class="tags_page__link tags_page__link_green">programming</a></li>
+								<li><a href="#" class="tags_page__link tags_page__link_green">security</a></li>
 							</ul>
 						</div>
-						<a href="#" class="tags-page__link">team</a>
-						<a href="#" class="tags-page__link tags-page__link_grey">contact</a>
-					</div>
+						<ul class="tags_page__menu">
+							<li><a href="#" class="tags_page__link">team</a></li>
+							<li><a href="#" class="tags_page__link">contact</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 
@@ -146,210 +155,220 @@
 
 			<!-- content-page -->
 
-			<div class="page__content content-page">
+			<div class="page__content content_page">
 				<div class="container">
-					<div class="content-page__inner">
+					<div class="content_page__inner">
 
 						<!-- entries-page -->
 
-						<div class="content-page__entries entries-page">
-							<div class="entries-page__title">Recent posts</div>
-							<div class="entries-page__posts">
-								<div class="entries-page__item item-post">
-									<div class="item-post__image">
-										<picture>
-											<source srcset="image/page/content/entries/1.avif" type="image/avif">
-											<source srcset="image/page/content/entries/1.webp" type="image/webp">
-											<img src="image/page/content/entries/1.jpg" alt="">
-										</picture>
-									</div>
-									<div class="item-post__content">
-										<a href="#" class="item-post__text">The Internet Cannot be Trusted –
-											Beamsplitters,
-											Backdoors,
-											and Broken Promises</a>
-										<div class="item-post__name">Derek Zimmer</div>
-										<div class="item-post__date"> | JUL 25, 2018</div>
-										<div class="item-post__tags">
-											<a href="#">Governments</a>,
-											<a href="#">Networking</a>,
-											<a href="#">Open Source</a>,
-											<a href="#">Privacy</a>,
-											<a href="#">Security</a>
+						<div class="content_page__entries entries_page">
+							<div class="entries_page__title">Recent posts</div>
+							<div class="entries_page__posts">
+								<div class="entries_page__item item_post">
+									<picture class="item_post__image">
+										<source srcset="image/page/content/entries/1.avif" type="image/avif">
+										<source srcset="image/page/content/entries/1.webp" type="image/webp">
+										<img src="image/page/content/entries/1.jpg" alt="">
+									</picture>
+									<div class="item_post__content">
+										<div class="item_post__title">
+											<a href="#" class="item_post__link">The Internet Cannot be Trusted –
+												Beamsplitters,
+												Backdoors,
+												and Broken Promises</a>
 										</div>
-										<div class="item-post__comment"><i class='far fa-comment-alt'></i>0</div>
+										<div class="item_post__data">
+											<div class="item_post__name">Derek Zimmer</div>
+											<div class="item_post__date"> | JUL 25, 2018</div>
+										</div>
+										<ul class="item_post__tags tags_item">
+											<li><a href="#" class="tags_item__link">Governments</a>,</li>
+											<li><a href="#" class="tags_item__link">Networking</a>,</li>
+											<li><a href="#" class="tags_item__link">Open Source</a>,</li>
+											<li><a href="#" class="tags_item__link">Privacy</a>,</li>
+											<li><a href="#" class="tags_item__link">Security</a></li>
+										</ul>
+										<div class="item_post__comment fa-regular fa-message">0</div>
 									</div>
 								</div>
-								<div class="entries-page__item item-post">
-									<div class="item-post__image">
-										<picture>
-											<source srcset="image/page/content/entries/2.avif" type="image/avif">
-											<source srcset="image/page/content/entries/2.webp" type="image/webp">
-											<img src="image/page/content/entries/2.jpg" alt="">
-										</picture>
-									</div>
-									<div class="item-post__content">
-										<a href="#" class="item-post__text">How to get cheaper flights using a VPN</a>
-										<div class="item-post__name">Jayson</div>
-										<div class="item-post__date"> | JUL 24, 2018</div>
-										<div class="item-post__tags"><a href="#">Guides</a></div>
-										<div class="item-post__comment"><i class='far fa-comment-alt'></i>0</div>
+								<div class="entries_page__item item_post">
+									<picture class="item_post__image">
+										<source srcset="image/page/content/entries/2.avif" type="image/avif">
+										<source srcset="image/page/content/entries/2.webp" type="image/webp">
+										<img src="image/page/content/entries/2.jpg" alt="">
+									</picture>
+									<div class="item_post__content">
+										<div class="item_post__title">
+											<a href="#" class="item_post__link">How to get cheaper flights using a VPN</a>
+										</div>
+										<div class="item_post__data">
+											<div class="item_post__name">Jayson</div>
+											<div class="item_post__date"> | JUL 24, 2018</div>
+										</div>
+										<ul class="item_post__tags tags_item">
+											<li><a href="#" class="tags_item__link">Guides</a></li>
+										</ul>
+										<div class="item_post__comment fa-regular fa-message">0</div>
 									</div>
 								</div>
-								<div class="entries-page__item item-post">
-									<div class="item-post__image">
-										<picture>
-											<source srcset="image/page/content/entries/3.avif" type="image/avif">
-											<source srcset="image/page/content/entries/3.webp" type="image/webp">
-											<img src="image/page/content/entries/3.jpg" alt="">
-										</picture>
-									</div>
-									<div class="item-post__content">
-										<a href="#" class="item-post__text">Net Neutrality was repealed, but the fight
-											is far
-											from
-											over</a>
-										<div class="item-post__name">Chris Miller</div>
-										<div class="item-post__date"> | JUL 22, 2018</div>
-										<div class="item-post__tags">
-											<a href="#">Governments</a>,
-											<a href="#">Net Neutrality</a>,
-											<a href="#">News</a>
+								<div class="entries_page__item item_post">
+									<picture class="item_post__image">
+										<source srcset="image/page/content/entries/3.avif" type="image/avif">
+										<source srcset="image/page/content/entries/3.webp" type="image/webp">
+										<img src="image/page/content/entries/3.jpg" alt="">
+									</picture>
+									<div class="item_post__content">
+										<div class="item_post__title">
+											<a href="#" class="item_post__link">Net Neutrality was repealed, but the fight
+												is far from over</a>
 										</div>
-										<div class="item-post__comment"><i class='far fa-comment-alt'></i>0</div>
+										<div class="item_post__data">
+											<div class="item_post__name">Chris Miller</div>
+											<div class="item_post__date"> | JUL 22, 2018</div>
+										</div>
+										<ul class="item_post__tags tags_item">
+											<li><a href="#" class="tags_item__link">Governments</a>,</li>
+											<li><a href="#" class="tags_item__link">Net Neutrality</a>,</li>
+											<li><a href="#" class="tags_item__link">News</a></li>
+										</ul>
+										<div class="item_post__comment fa-regular fa-message">0</div>
 									</div>
 								</div>
 							</div>
-							<div class="entries-page__posts">
-								<div class="entries-page__item item-post">
-									<div class="item-post__image">
-										<picture>
-											<source srcset="image/page/content/entries/1.avif" type="image/avif">
-											<source srcset="image/page/content/entries/1.webp" type="image/webp">
-											<img src="image/page/content/entries/1.jpg" alt="">
-										</picture>
-									</div>
-									<div class="item-post__content">
-										<a href="#" class="item-post__text">The Internet Cannot be Trusted –
-											Beamsplitters,
-											Backdoors,
-											and Broken Promises</a>
-										<div class="item-post__name">Derek Zimmer</div>
-										<div class="item-post__date"> | JUL 25, 2018</div>
-										<div class="item-post__tags">
-											<a href="#">Governments</a>,
-											<a href="#">Networking</a>,
-											<a href="#">Open Source</a>,
-											<a href="#">Privacy</a>,
-											<a href="#">Security</a>
+							<div class="entries_page__posts">
+								<div class="entries_page__item item_post">
+									<picture class="item_post__image">
+										<source srcset="image/page/content/entries/1.avif" type="image/avif">
+										<source srcset="image/page/content/entries/1.webp" type="image/webp">
+										<img src="image/page/content/entries/1.jpg" alt="">
+									</picture>
+									<div class="item_post__content">
+										<div class="item_post__title">
+											<a href="#" class="item_post__link">The Internet Cannot be Trusted –
+												Beamsplitters,
+												Backdoors,
+												and Broken Promises</a>
 										</div>
-										<div class="item-post__comment"><i class='far fa-comment-alt'></i>0</div>
+										<div class="item_post__data">
+											<div class="item_post__name">Derek Zimmer</div>
+											<div class="item_post__date"> | JUL 25, 2018</div>
+										</div>
+										<ul class="item_post__tags tags_item">
+											<li><a href="#" class="tags_item__link">Governments</a>,</li>
+											<li><a href="#" class="tags_item__link">Networking</a>,</li>
+											<li><a href="#" class="tags_item__link">Open Source</a>,</li>
+											<li><a href="#" class="tags_item__link">Privacy</a>,</li>
+											<li><a href="#" class="tags_item__link">Security</a></li>
+										</ul>
+										<div class="item_post__comment fa-regular fa-message">0</div>
 									</div>
 								</div>
-								<div class="entries-page__item item-post">
-									<div class="item-post__image">
-										<picture>
-											<source srcset="image/page/content/entries/2.avif" type="image/avif">
-											<source srcset="image/page/content/entries/2.webp" type="image/webp">
-											<img src="image/page/content/entries/2.jpg" alt="">
-										</picture>
-									</div>
-									<div class="item-post__content">
-										<a href="#" class="item-post__text">How to get cheaper flights using a VPN</a>
-										<div class="item-post__name">Jayson</div>
-										<div class="item-post__date"> | JUL 24, 2018</div>
-										<div class="item-post__tags"><a href="#">Guides</a></div>
-										<div class="item-post__comment"><i class='far fa-comment-alt'></i>0</div>
+								<div class="entries_page__item item_post">
+									<picture class="item_post__image">
+										<source srcset="image/page/content/entries/2.avif" type="image/avif">
+										<source srcset="image/page/content/entries/2.webp" type="image/webp">
+										<img src="image/page/content/entries/2.jpg" alt="">
+									</picture>
+									<div class="item_post__content">
+										<div class="item_post__title">
+											<a href="#" class="item_post__link">How to get cheaper flights using a VPN</a>
+										</div>
+										<div class="item_post__data">
+											<div class="item_post__name">Jayson</div>
+											<div class="item_post__date"> | JUL 24, 2018</div>
+										</div>
+										<ul class="item_post__tags tags_item">
+											<li><a href="#" class="tags_item__link">Guides</a></li>
+										</ul>
+										<div class="item_post__comment fa-regular fa-message">0</div>
 									</div>
 								</div>
-								<div class="entries-page__item item-post">
-									<div class="item-post__image">
-										<picture>
-											<source srcset="image/page/content/entries/3.avif" type="image/avif">
-											<source srcset="image/page/content/entries/3.webp" type="image/webp">
-											<img src="image/page/content/entries/3.jpg" alt="">
-										</picture>
-									</div>
-									<div class="item-post__content">
-										<a href="#" class="item-post__text">Net Neutrality was repealed, but the fight
-											is far
-											from
-											over</a>
-										<div class="item-post__name">Chris Miller</div>
-										<div class="item-post__date"> | JUL 22, 2018</div>
-										<div class="item-post__tags">
-											<a href="#">Governments</a>,
-											<a href="#">Net Neutrality</a>,
-											<a href="#">News</a>
+								<div class="entries_page__item item_post">
+									<picture class="item_post__image">
+										<source srcset="image/page/content/entries/3.avif" type="image/avif">
+										<source srcset="image/page/content/entries/3.webp" type="image/webp">
+										<img src="image/page/content/entries/3.jpg" alt="">
+									</picture>
+									<div class="item_post__content">
+										<div class="item_post__title">
+											<a href="#" class="item_post__link">Net Neutrality was repealed, but the fight
+												is far from over</a>
 										</div>
-										<div class="item-post__comment"><i class='far fa-comment-alt'></i>0</div>
+										<div class="item_post__data">
+											<div class="item_post__name">Chris Miller</div>
+											<div class="item_post__date"> | JUL 22, 2018</div>
+										</div>
+										<ul class="item_post__tags tags_item">
+											<li><a href="#" class="tags_item__link">Governments</a>,</li>
+											<li><a href="#" class="tags_item__link">Net Neutrality</a>,</li>
+											<li><a href="#" class="tags_item__link">News</a></li>
+										</ul>
+										<div class="item_post__comment fa-regular fa-message">0</div>
 									</div>
 								</div>
 							</div>
-							<button type="button" class="entries-page__btn button">older posts</button>
+							<button type="button" class="entries_page__btn button">older posts</button>
 						</div>
 
 						<!-- entries-page end -->
 
 						<!-- side-page -->
 
-						<aside class="content-page__side side-page">
-							<form class="side-page__search">
-								<input type="search" placeholder="Search blog">
-								<button type="submit">
-									<img src="image/page/content/side/icon_search.svg" alt="">
-								</button>
+						<aside class="content_page__side side_page sidePage">
+							<form class="side_page__search searchForm">
+								<label class="side_page__label"><input type="search" class="side_page__input" placeholder="Search blog"></label>
+								<button type="submit" class="side_page__button"></button>
 							</form>
-							<div class="side-page__announcements side-block">
-								<div class="announcements-side__title side-block__title">Announcements</div>
-								<ul class="announcements-side__list side-block__list">
-									<li><a href="#" class="announcements-side__link side-block__link">Upcoming Changes
+							<div class="side_page__announcements side_block">
+								<div class="announcements_side__title side_block__title">Announcements</div>
+								<ul class="announcements_side__list side_block__list">
+									<li><a href="#" class="announcements_side__link side_block__link">Upcoming Changes
 											(Live Chat, Less
 											Censorship, More Access)</a></li>
-									<li><a href="#" class="announcements-side__link side-block__link">New Servers (US
+									<li><a href="#" class="announcements_side__link side_block__link">New Servers (US
 											Washington DC)</a>
 									</li>
-									<li><a href="#" class="announcements-side__link side-block__link">New Servers (US
+									<li><a href="#" class="announcements_side__link side_block__link">New Servers (US
 											Denver)</a></li>
-									<li><a href="#" class="announcements-side__link side-block__link">Open Source:
+									<li><a href="#" class="announcements_side__link side_block__link">Open Source:
 											Releasing the PIA iOS
 											Client</a></li>
-									<li><a href="#" class="announcements-side__link side-block__link">Opera Extension is
+									<li><a href="#" class="announcements_side__link side_block__link">Opera Extension is
 											now
 											available</a>
 									</li>
 								</ul>
 							</div>
-							<div class="side-page__popular side-block">
-								<div class="popular-side__title side-block__title">Popular posts</div>
-								<ul class="popular-side__list side-block__list">
-									<li><a href="#" class="popular-side__link side-block__link">The Gift of Privacy</a>
+							<div class="side_page__popular side_block">
+								<div class="popular_side__title side_block__title">Popular posts</div>
+								<ul class="popular_side__list side_block__list">
+									<li><a href="#" class="popular_side__link side_block__link">The Gift of Privacy</a>
 									</li>
-									<li><a href="#" class="popular-side__link side-block__link">UK High Court Censors
+									<li><a href="#" class="popular_side__link side_block__link">UK High Court Censors
 											Many Links To
 											Popcorn
 											Time: Useless, Dangerous Gesture</a></li>
-									<li><a href="#" class="popular-side__link side-block__link">About the PIA Client
+									<li><a href="#" class="popular_side__link side_block__link">About the PIA Client
 											Security and VPN
 											Security in General</a></li>
-									<li><a href="#" class="popular-side__link side-block__link">A Private Net Is Just As
+									<li><a href="#" class="popular_side__link side_block__link">A Private Net Is Just As
 											Fundamental A
 											Right
 											As Freedom Of Speech</a></li>
-									<li><a href="#" class="popular-side__link side-block__link">Wiretapping Today Just
+									<li><a href="#" class="popular_side__link side_block__link">Wiretapping Today Just
 											Doesn’t Mean What
 											The
 											Word Meant In The 1990s, So Don’t Fall For That Lie</a></li>
 								</ul>
 							</div>
-							<div class="side-page__banner">
-								<a href="#" class="cloud-side__link">
+							<div class="side_page__banner banner_side">
+								<a href="#" class="banner_side__link">
 									<img src="image/page/content/side/banner.jpg" alt="">
 								</a>
 							</div>
-							<div class="side-page__cloud side-block">
-								<div class="cloud-side__title side-block__title">Tag cloud</div>
-								<a href="#" class="cloud-side__link">
+							<div class="side_page__cloud side_block">
+								<div class="cloud_side__title side_block__title">Tag cloud</div>
+								<a href="#" class="cloud_side__link">
 									<img src="image/page/content/side/cloud.jpg" alt="">
 								</a>
 							</div>
@@ -365,43 +384,43 @@
 
 			<!-- pricing-page -->
 
-			<section class="page__pricing pricing-page">
+			<div class="page__pricing pricing_page">
 				<div class="container">
-					<div class="pricing-page__inner">
-						<h1 class="pricing-page__title"><span>Sign up today</span> <span>– 7 day money back</span>
+					<div class="pricing_page__inner">
+						<h2 class="pricing_page__title"><span>Sign up today</span> <span>– 7 day money back</span>
 							<span>guarantee</span>
-						</h1>
-						<div class="pricing-page__items">
-							<div class="pricing-page__item item-card">
-								<div class="item-card__term">MONTHLY</div>
-								<div class="item-card__price"><sup>$</sup>6.95<sub>/mo.</sub></div>
-								<div class="item-card__text">Includes all VPN features.</div>
-								<button type="button" class="item-card__btn button">SIGN UP</button>
+						</h2>
+						<div class="pricing_page__items">
+							<div class="pricing_page__item item_card">
+								<div class="item_card__term">MONTHLY</div>
+								<div class="item_card__price"><sup>$</sup>6.95<sub>/mo.</sub></div>
+								<div class="item_card__text">Includes all VPN features.</div>
+								<button type="button" class="item_card__btn button">SIGN UP</button>
 							</div>
-							<div class="pricing-page__item item-card">
-								<div class="item-card__term">Two Years</div>
-								<div class="item-card__price"><sup>$</sup>2.91<sub>/mo.</sub></div>
-								<div class="item-card__text">
+							<div class="pricing_page__item item_card">
+								<div class="item_card__term">Two Years</div>
+								<div class="item_card__price"><sup>$</sup>2.91<sub>/mo.</sub></div>
+								<div class="item_card__text">
 									<del>$166.80</del>
 									$69.95 per two years
 									<b>Save 58%*</b>
 								</div>
-								<button type="button" class="item-card__btn button">SIGN UP</button>
+								<button type="button" class="item_card__btn button">SIGN UP</button>
 							</div>
-							<div class="pricing-page__item item-card">
-								<div class="item-card__term">YEARLY</div>
-								<div class="item-card__price"><sup>$</sup>3.33<sub>/mo.</sub></div>
-								<div class="item-card__text">
+							<div class="pricing_page__item item_card">
+								<div class="item_card__term">YEARLY</div>
+								<div class="item_card__price"><sup>$</sup>3.33<sub>/mo.</sub></div>
+								<div class="item_card__text">
 									<del>$83.40</del>
 									$39.95 per year
 									<b>Save 52%*</b>
 								</div>
-								<button type="button" class="item-card__btn button">SIGN UP</button>
+								<button type="button" class="item_card__btn button">SIGN UP</button>
 							</div>
 						</div>
-						<div class="pricing-page__pay pay-pricing">
-							<div class="pay-pricing__title">Ways to pay:</div>
-							<ul class="pay-pricing__list">
+						<div class="pricing_page__pay pay_pricing">
+							<div class="pay_pricing__title">Ways to pay:</div>
+							<ul class="pay_pricing__list">
 								<li><img src="image/page/pricing/visa.svg" alt=""></li>
 								<li><img src="image/page/pricing/mc.svg" alt=""></li>
 								<li><img src="image/page/pricing/amex.svg" alt=""></li>
@@ -411,13 +430,13 @@
 								<li><img src="image/page/pricing/amazon.svg" alt=""></li>
 							</ul>
 						</div>
-						<div class="pricing-page__footer">
-							<a href="#" class="pricing-page__link">How to pay anonymously</a>
-							<a href="#" class="pricing-page__link">REDEEM GIFT CARD</a>
-						</div>
+						<ul class="pricing_page__footer">
+							<li><a href="#" class="pricing_page__link">How to pay anonymously</a></li>
+							<li><a href="#" class="pricing_page__link">REDEEM GIFT CARD</a></li>
+						</ul>
 					</div>
 				</div>
-			</section>
+			</div>
 
 			<!-- pricing-page end -->
 
@@ -431,54 +450,54 @@
 					<div class="footer__logo">Company Name</div>
 					<div class="footer__body">
 						<div class="footer__section footer__section_column">
-							<div class="footer__column column-footer">
-								<div class="column-footer__title">Company</div>
-								<ul class="column-footer__list">
-									<li><a href="#" class="column-footer__link">About Us</a></li>
-									<li><a href="#" class="column-footer__link">Our Team</a></li>
-									<li><a href="#" class="column-footer__link">Careers</a></li>
-									<li><a href="#" class="column-footer__link">Press</a></li>
-									<li><a href="#" class="column-footer__link">In the Media</a></li>
-									<li><a href="#" class="column-footer__link">VPN Reviews</a></li>
-									<li><a href="#" class="column-footer__link">Companies We Support</a></li>
-									<li><a href="#" class="column-footer__link">Contact Us</a></li>
-									<li><a href="#" class="column-footer__link">Blog</a></li>
+							<div class="footer__column column_footer">
+								<div class="column_footer__title">Company</div>
+								<ul class="column_footer__list">
+									<li><a href="#" class="column_footer__link">About Us</a></li>
+									<li><a href="#" class="column_footer__link">Our Team</a></li>
+									<li><a href="#" class="column_footer__link">Careers</a></li>
+									<li><a href="#" class="column_footer__link">Press</a></li>
+									<li><a href="#" class="column_footer__link">In the Media</a></li>
+									<li><a href="#" class="column_footer__link">VPN Reviews</a></li>
+									<li><a href="#" class="column_footer__link">Companies We Support</a></li>
+									<li><a href="#" class="column_footer__link">Contact Us</a></li>
+									<li><a href="#" class="column_footer__link">Blog</a></li>
 								</ul>
 							</div>
-							<div class="footer__column column-footer">
-								<div class="column-footer__title">programs</div>
-								<ul class="column-footer__list column-footer__list_high">
-									<li><a href="#" class="column-footer__link">Whitehat Security</a></li>
-									<li><a href="#" class="column-footer__link">Affiliates</a></li>
+							<div class="footer__column column_footer">
+								<div class="column_footer__title">programs</div>
+								<ul class="column_footer__list column_footer__list_high">
+									<li><a href="#" class="column_footer__link">Whitehat Security</a></li>
+									<li><a href="#" class="column_footer__link">Affiliates</a></li>
 								</ul>
-								<div class="column-footer__title">learn more</div>
-								<ul class="column-footer__list">
-									<li><a href="#" class="column-footer__link">VPN Encryption</a></li>
-									<li><a href="#" class="column-footer__link">Android VPN App</a></li>
-									<li><a href="#" class="column-footer__link">iOS VPN App</a></li>
-									<li><a href="#" class="column-footer__link">PIA Sitemap</a></li>
+								<div class="column_footer__title">learn more</div>
+								<ul class="column_footer__list">
+									<li><a href="#" class="column_footer__link">VPN Encryption</a></li>
+									<li><a href="#" class="column_footer__link">Android VPN App</a></li>
+									<li><a href="#" class="column_footer__link">iOS VPN App</a></li>
+									<li><a href="#" class="column_footer__link">PIA Sitemap</a></li>
 								</ul>
 							</div>
-							<div class="footer__column footer__column_last column-footer">
-								<div class="column-footer__title">LEGAL</div>
-								<ul class="column-footer__list">
-									<li><a href="#" class="column-footer__link">Terms Of Service</a></li>
-									<li><a href="#" class="column-footer__link">Privacy Policy</a></li>
-									<li><a href="#" class="column-footer__link">DMCA Policy</a></li>
-									<li><a href="#" class="column-footer__link">Export Control Policy</a></li>
+							<div class="footer__column footer__column_last column_footer footerColumnLast">
+								<div class="column_footer__title">LEGAL</div>
+								<ul class="column_footer__list">
+									<li><a href="#" class="column_footer__link">Terms Of Service</a></li>
+									<li><a href="#" class="column_footer__link">Privacy Policy</a></li>
+									<li><a href="#" class="column_footer__link">DMCA Policy</a></li>
+									<li><a href="#" class="column_footer__link">Export Control Policy</a></li>
 								</ul>
 							</div>
 						</div>
-						<div class="footer__section footer__section_row">
-							<div class="footer__row row-footer">
-								<div class="row-footer__title column-footer__title">ABOUT</div>
-								<div class="row-footer__text">
+						<div class="footer__section footer__section_row footerSectionRow">
+							<div class="footer__row row_footer">
+								<div class="row_footer__title column_footer__title">ABOUT</div>
+								<div class="row_footer__text">
 									Private Internet Access is the leading VPN Service provider specializing in secure,
 									encrypted VPN tunnels which create several layers of privacy and security providing
 									you safety on the internet. Our service is backed by multiple gateways worldwide
 									with access in 28+ countries, 44+ regions.
 								</div>
-								<div class="row-footer__text row-footer__text_small">
+								<div class="row_footer__text row_footer__text_small">
 									<p>Map data provided by Google.</p>
 									<p>
 										PC Mag Editor’s Choice award image reprinted with permission. © 2012 Ziff Davis,
@@ -490,16 +509,15 @@
 									<p>© London Trust Media, Inc. All Rights Reserved.</p>
 								</div>
 							</div>
-							<div class="footer__row footer__row_last row-footer">
-								<div class="row-footer__title column-footer__title">SOCIAL</div>
-								<ul class="row-footer__social">
-									<li><a href="#" class="row-footer__link"><i class='fab fa-facebook-f'></i></a></li>
-									<li><a href="#" class="row-footer__link"><i class='fab fa-twitter'></i></a></li>
-									<li><a href="#" class="row-footer__link"><i class='fab fa-google-plus-g'></i></a>
-									</li>
-									<li><a href="#" class="row-footer__link"><i class='fab fa-linkedin'></i></a></li>
-									<li><a href="#" class="row-footer__link"><i class='fab fa-reddit'></i></a></li>
-									<li><a href="#" class="row-footer__link"><i class='fab fa-youtube'></i></a></li>
+							<div class="footer__row footer__row_last row_footer rowFooter">
+								<div class="row_footer__title column_footer__title">SOCIAL</div>
+								<ul class="row_footer__social socialLink">
+									<li><a href="#" class="row_footer__link fa-brands fa-facebook-f"></a></li>
+									<li><a href="#" class="row_footer__link fa-brands fa-twitter"></a></li>
+									<li><a href="#" class="row_footer__link fa-brands fa-google-plus-g"></a></li>
+									<li><a href="#" class="row_footer__link fa-brands fa-linkedin"></a></li>
+									<li><a href="#" class="row_footer__link fa-brands fa-reddit"></a></li>
+									<li><a href="#" class="row_footer__link fa-brands fa-youtube"></a></li>
 								</ul>
 							</div>
 						</div>
@@ -509,9 +527,6 @@
 		</footer>
 
 	</div>
-
-	<!-- Подключение иконок -->
-	<script src="https://kit.fontawesome.com/9e73be8edf.js" crossorigin="anonymous"></script>
 
 	<script src="js/app.js"></script>
 

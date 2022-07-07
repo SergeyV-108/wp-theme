@@ -1,44 +1,44 @@
 /*================== Закрытие блока уведомления =================*/
-let topHeaderClose = document.querySelector('.top-header__close');
+let btnClose = document.querySelector('.btnClose');
 
-topHeaderClose.onclick = function () {
-	topHeaderClose.parentElement.style.display = 'none';
+btnClose.onclick = function () {
+	btnClose.parentElement.style.display = 'none';
 }
 /*================================================================*/
 /*================ Перенос формы поиска в сайдбаре ===============*/
 let wrapper = document.querySelector('.wrapper');
-let sidePageSearch = document.querySelector('.side-page__search');
-let articlePageItem = document.querySelector('.article-page__item');
-let contentPageSide = document.querySelector('.content-page__side');
+let searchForm = document.querySelector('.searchForm');
+let itemArticle = document.querySelector('.itemArticle');
+let sidePage = document.querySelector('.sidePage');
 
 changePlace();
 
 window.addEventListener('resize', function () {
-	contentPageSide.prepend(sidePageSearch);
+	sidePage.prepend(searchForm);
 	changePlace();
 });
 
 function changePlace() {
 	if (wrapper.offsetWidth <= 1100) {
-		articlePageItem.after(sidePageSearch);
+		itemArticle.after(searchForm);
 	}
 }
 /*================================================================*/
 /*================== Перенос соц.ссылок в footer =================*/
-let rowFooterSocial = document.querySelector('.row-footer__social').closest('.footer__row');
-let footerColumnLast = document.querySelector('.footer__column_last');
-let footerSectionRow = document.querySelector('.footer__section_row');
+let socialLink = document.querySelector('.socialLink').closest('.rowFooter');
+let footerColumnLast = document.querySelector('.footerColumnLast');
+let footerSectionRow = document.querySelector('.footerSectionRow');
 
 changePlaceSoc();
 
 window.addEventListener('resize', function () {
-	footerSectionRow.append(rowFooterSocial);
+	footerSectionRow.append(socialLink);
 	changePlaceSoc();
 });
 
 function changePlaceSoc() {
 	if (wrapper.offsetWidth <= 540) {
-		footerColumnLast.after(rowFooterSocial);
+		footerColumnLast.after(socialLink);
 	}
 }
 /*================================================================*/
